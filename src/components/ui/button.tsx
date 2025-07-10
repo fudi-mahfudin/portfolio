@@ -1,14 +1,17 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { ImSpinner2 } from 'react-icons/im';
 
 interface Props {
   children: React.ReactNode;
   link?: string;
   isIcon?: boolean;
   className?: string;
+  type?: 'submit' | 'reset' | 'button';
+  loading?: boolean;
 }
 
-export default function Button({ children, className, link, isIcon }: Props) {
+export default function Button({ children, className, link, isIcon, type, loading }: Props) {
   return (
     <>
       {link ? (
@@ -18,8 +21,8 @@ export default function Button({ children, className, link, isIcon }: Props) {
           </ButtonBody>
         </Link>
       ) : (
-        <button>
-          <ButtonBody className={className} isIcon={isIcon}>
+        <button type={type} disabled={loading}>
+          <ButtonBody className={className} isIcon={isIcon} loading={loading}>
             {children}
           </ButtonBody>
         </button>
@@ -28,7 +31,7 @@ export default function Button({ children, className, link, isIcon }: Props) {
   );
 }
 
-function ButtonBody({ children, className, isIcon }: Props) {
+function ButtonBody({ children, className, isIcon, loading }: Props) {
   return (
     <span className="cursor-pointer flex-none w-auto h-full">
       <span
@@ -38,7 +41,11 @@ function ButtonBody({ children, className, isIcon }: Props) {
           isIcon ? 'size-10' : 'w-max h-full px-3 py-2'
         )}
       >
-        {children}
+        {loading ? (
+          <ImSpinner2 className="animate-spin text-blue-hera" />
+        ) : (
+          children
+        )}
       </span>
     </span>
   );
