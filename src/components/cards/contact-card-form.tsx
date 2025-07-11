@@ -42,7 +42,7 @@ export default function ContactCardForm() {
     };
 
     try {
-      const res = await emailjs.send(
+      await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         payload,
@@ -56,6 +56,7 @@ export default function ContactCardForm() {
         },
       });
     } catch (error) {
+      console.log(error);
       toast.error('Something went wrong, please try again', {
         duration: Infinity,
       });

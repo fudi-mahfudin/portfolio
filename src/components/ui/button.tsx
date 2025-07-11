@@ -9,19 +9,20 @@ interface Props {
   className?: string;
   type?: 'submit' | 'reset' | 'button';
   loading?: boolean;
+  onClick?: () => void;
 }
 
-export default function Button({ children, className, link, isIcon, type, loading }: Props) {
+export default function Button({ children, className, link, isIcon, type, loading, onClick }: Props) {
   return (
     <>
       {link ? (
-        <Link href={link} className="w-10 h-10 cursor-pointer" target='_blank'>
+        <Link href={link} className="cursor-pointer" target='_blank'>
           <ButtonBody className={className} isIcon={isIcon}>
             {children}
           </ButtonBody>
         </Link>
       ) : (
-        <button type={type} disabled={loading}>
+        <button type={type} disabled={loading} onClick={onClick}>
           <ButtonBody className={className} isIcon={isIcon} loading={loading}>
             {children}
           </ButtonBody>

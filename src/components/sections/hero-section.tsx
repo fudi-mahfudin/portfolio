@@ -1,7 +1,7 @@
 import { PROFILE_DATA } from '@/data';
 import Header from '../navigation/header';
 import MagneticWrapper from '../stylings/magnetic-wrapper';
-import { FaArrowRight, FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import ButtonFancy from '../ui/button-fancy';
 import LiveClock from '../live-clock';
 
