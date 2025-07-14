@@ -17,6 +17,7 @@ import PrismaImg from '@/../public/images/logo/icon-prisma.svg';
 import PostgresImg from '@/../public/images/logo/icon-postgresql.svg';
 import ReduxImg from '@/../public/images/logo/icon-redux.svg';
 import ZodImg from '@/../public/images/logo/icon-zod.svg';
+import GsapImg from '@/../public/images/logo/icon-gsap.svg';
 
 export const STACK_DATA = [
   {
@@ -44,6 +45,7 @@ export const STACK_DATA = [
       { label: 'Tailwind css', image: TailwindImg, bgColor: '#F5F5F5' },
       { label: 'Shadcn/ui', image: ShadcnImg, bgColor: '#000' },
       { label: 'Framer motion', image: FramerMotionImg, bgColor: '#F5F5F5' },
+      { label: 'GSAP', image: GsapImg, bgColor: '' },
     ],
   },
   {

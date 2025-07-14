@@ -14,7 +14,8 @@ export default function Profile() {
         <div className="size-4 rounded-full bg-green-benzol border border-blue-cosmos absolute right-0 bottom-4" />
       </div>
       <p className="text-3xl font-medium">
-        {PROFILE_DATA.name_first} <span className="font-extralight">{PROFILE_DATA.name_last}</span>
+        {PROFILE_DATA.name_first}{' '}
+        <span className="font-extralight">{PROFILE_DATA.name_last}</span>
       </p>
     </div>
   );

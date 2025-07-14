@@ -1,5 +1,5 @@
 import { APP_URL } from '@/lib/constants';
-import PhotoImg from '@/../public/images/profile.jpg';
+import PhotoImg from '@/../public/images/profile-tr.webp';
 import LinkedinImg from '@/../public/images/logo/icon-linkedin.svg';
 import GithubImg from '@/../public/images/logo/icon-github.svg';
 
@@ -8,7 +8,7 @@ export const PROFILE_DATA = {
   name_first: 'Fudi',
   name_last: 'Mahfudin',
   job: 'Full Stack Developer',
-  photo: '/images/profile.jpg',
+  photo: '/images/profile-tr.webp',
   photo_src: PhotoImg,
   email: 'fudi.mahfudin@gmail.com',
   wa_url: 'https://wa.me/6289653893888',

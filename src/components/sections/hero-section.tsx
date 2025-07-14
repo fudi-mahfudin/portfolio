@@ -13,20 +13,20 @@ export default function HeroSection() {
       {/* slogan */}
       <div className="flex flex-col">
         <p className="text-[16vw] lg:text-[14vw] 2xl:text-[12rem] uppercase font-medium leading-[.8] text-center">
-          Code
+          Build
           <br />
-          Crafting
+          Design
           <br />
-          Brilliance
+          Innovate
         </p>
         <p className="text-base tracking-tighter uppercase font-medium pl-[1.5vw] md:pl-[2.5vw] 2xl:self-end">
-          Empowering innovation
+          Creating seamless and intuitive
           <br />
-          through inspired design
+          digital experiences that engage users
           <br />
-          where challenges spark creativity
-          <br />
-          and solutions redefine possibilities.
+          <span className="tracking-normal">
+            and fuel significant business growth.
+          </span>
         </p>
       </div>
 

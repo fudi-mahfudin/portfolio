@@ -22,7 +22,7 @@
   --color-green-benzol: #00d372;
   --color-pink-ice: #d87cac;
   --color-border: rgb(255 255 255 / 0.05);
-  --background-image-grain: url(/images/background/noisy-background.jpg);
+  --background-image-grain: url(/images/background/noisy-background.webp);
 }
 
 @media (prefers-color-scheme: dark) {

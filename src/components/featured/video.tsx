@@ -4,8 +4,7 @@ import { cn } from '@/lib/utils';
 import { useRef, useEffect } from 'react';
 import { BsGithub } from 'react-icons/bs';
 import Button from '../ui/button';
-import { MdOpenInNew } from 'react-icons/md';
-import { LuFullscreen } from 'react-icons/lu';
+import { MdOpenInFull, MdOpenInNew } from 'react-icons/md';
 import { Featured } from '@/lib/types';
 
 interface Props {
@@ -47,6 +46,7 @@ export default function Video({ active, featured }: Props) {
           <Button
             className="bg-zinc-500 hover:bg-zinc-800"
             link={featured.repository_url}
+            title="Open repository"
           >
             Tech
             <BsGithub />
@@ -56,6 +56,7 @@ export default function Video({ active, featured }: Props) {
           <Button
             className="bg-zinc-500 hover:bg-zinc-800"
             link={featured.live_url}
+            title="Open live"
           >
             Live
             <MdOpenInNew />
@@ -64,8 +65,9 @@ export default function Video({ active, featured }: Props) {
         <Button
           className="bg-zinc-500 hover:bg-zinc-800"
           onClick={() => videoRef.current?.requestFullscreen()}
+          title="Fullscreen"
         >
-          <LuFullscreen />
+          <MdOpenInFull />
         </Button>
       </div>
     </>
