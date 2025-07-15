@@ -12,8 +12,10 @@ export const PROFILE_DATA = {
   photo_src: PhotoImg,
   email: 'fudi.mahfudin@gmail.com',
   wa_url: 'https://wa.me/6289653893888',
-  cv_url: 'https://google.com',
-  summary: 'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including Next.js, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows. 🚀🖥',
+  cv_url:
+    'https://drive.google.com/file/d/1r6o60UGqWqmixusSzOvdxU1vRBLOrJQE/view',
+  summary:
+    'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including Next.js, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows. 🚀🖥',
 
   meta_title:
     'Fudi Mahfudin | Full Stack Developer (Next.js, React Native, React.js, Laravel)',
