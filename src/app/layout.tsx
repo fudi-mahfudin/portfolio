@@ -1,6 +1,6 @@
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.css';
 import { PROFILE_DATA } from '@/data';
 import { APP_URL } from '@/lib/constants';
 import { cn } from '@/lib/utils';
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(fontSans.variable, fontMono.variable)}>
+    <html lang="en" className={cn(fontSans.variable, fontMono.variable, 'overflow-y-scroll')}>
       <body className="relative flex min-h-screen flex-col antialiased">
         {children}
       </body>
