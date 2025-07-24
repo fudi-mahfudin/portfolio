@@ -8,7 +8,7 @@ export default function FavoriteFramework() {
         <HeartIcon className='size-[18px]' />
         <h2 className='text-sm'>Fav. framework</h2>
       </div>
-      <div className='flex items-center justify-center'>
+      <div className='flex-1 flex items-center justify-center'>
         <SiNextdotjs size={80} className='text-zinc-800 dark:text-zinc-200' />
       </div>
     </div>

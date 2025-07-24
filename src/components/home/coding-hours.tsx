@@ -8,7 +8,7 @@ export default function CodingHours() {
         <ClockIcon className="size-[18px]" />
         <h2 className="text-sm">Coding Hours</h2>
       </div>
-      <div className="flex grow items-center justify-center text-4xl font-semibold">
+      <div className="flex-1 flex grow items-center justify-center text-4xl font-semibold">
         {formatNumber(
           Math.round(
             (new Date().getTime() - new Date('2015-01-01').getTime()) /

@@ -41,6 +41,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --shadow-feature-card: var(--feature-card);
+  --background-image-email-button: var(--email-button);
 
   --animate-marquee-left: marquee-left var(--duration, 30s) linear infinite;
   --animate-marquee-up: marquee-up var(--duration, 30s) linear infinite;
@@ -99,6 +100,7 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
   --feature-card: 0 -1px 3px 0 rgb(0 0 0 / 0.05);
+  --email-button: linear-gradient(180deg, var(--color-amber-600) 5%, var(--color-amber-400) 100%);
 }
 
 .dark {

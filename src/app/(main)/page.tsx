@@ -1,4 +1,5 @@
 import AboutMe from '@/components/home/about-me';
+import GetInTouch from '@/components/home/get-in-touch';
 import Hero from '@/components/home/hero';
 import SelectedProjects from '@/components/home/selected-projects';
 import { PROFILE_DATA } from '@/data';
@@ -38,6 +39,7 @@ export default function Home() {
       <Hero />
       <SelectedProjects />
       <AboutMe />
+      <GetInTouch />
     </>
   );
 }
