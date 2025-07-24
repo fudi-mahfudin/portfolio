@@ -1,6 +1,7 @@
+import { SiGithub } from '@icons-pack/react-simple-icons';
 import {
-  BarChartIcon,
   FlameIcon,
+  LinkedinIcon,
   MessageCircleIcon,
   MonitorIcon,
   PencilIcon,
@@ -64,3 +65,16 @@ export const FOOTER_LINKS = [
     ],
   },
 ] as const;
+
+export const SOCIAL_LINKS = [
+  {
+    href: '#github',
+    title: 'GitHub',
+    icon: SiGithub,
+  },
+  {
+    href: '#linkedin',
+    title: 'LinkedIn',
+    icon: LinkedinIcon,
+  },
+];
