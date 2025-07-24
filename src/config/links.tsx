@@ -1,8 +1,13 @@
-import { SiGithub } from '@icons-pack/react-simple-icons';
 import {
+  SiGithub,
+  SiInstagram,
+  SiYoutube,
+} from '@icons-pack/react-simple-icons';
+import {
+  FileUserIcon,
   FlameIcon,
+  HeartHandshakeIcon,
   LinkedinIcon,
-  MessageCircleIcon,
   MonitorIcon,
   PencilIcon,
   UserCircleIcon,
@@ -15,14 +20,14 @@ export const HEADER_LINKS = [
     key: 'blog',
   },
   {
-    icon: <MessageCircleIcon className="size-3.5" />,
-    href: '/guestbook',
-    key: 'guestbook',
-  },
-  {
     icon: <FlameIcon className="size-3.5" />,
     href: '/projects',
-    key: 'projects',
+    key: 'project',
+  },
+  {
+    icon: <HeartHandshakeIcon className="size-3.5" />,
+    href: '/services',
+    key: 'service',
   },
   {
     icon: <UserCircleIcon className="size-3.5" />,
@@ -30,9 +35,9 @@ export const HEADER_LINKS = [
     key: 'about',
   },
   {
-    icon: <MonitorIcon className="size-3.5" />,
-    href: '/uses',
-    key: 'uses',
+    icon: <FileUserIcon className="size-3.5" />,
+    href: '/resume',
+    key: 'resume',
   },
 ] as const;
 
@@ -43,38 +48,47 @@ export const FOOTER_LINKS = [
       { href: '/', key: 'home' },
       { href: '/blog', key: 'blog' },
       { href: '/about', key: 'about' },
-      { href: '/dashboard', key: 'dashboard' },
+      { href: '/resume', key: 'resume' },
     ],
   },
   {
     id: 2,
     links: [
-      { href: '/guestbook', key: 'guestbook' },
-      { href: '/uses', key: 'uses' },
-      { href: '/projects', key: 'projects' },
+      { href: '/services', key: 'service' },
+      { href: '/projects', key: 'project' },
       { href: 'https://mahfudin.vercel.app', key: 'links' },
     ],
   },
   {
     id: 3,
     links: [
-      { href: '#facebook', key: 'facebook' },
-      { href: '#instagram', key: 'instagram' },
-      { href: '#github', key: 'github' },
-      { href: '#youtube', key: 'youtube' },
+      { href: 'https://www.linkedin.com/in/fudi-mahfudin', key: 'linkedin' },
+      { href: 'https://github.com/fudi-mahfudin', key: 'github' },
+      { href: 'https://instagram.com', key: 'instagram' },
+      { href: 'https://youtube.com', key: 'youtube' },
     ],
   },
 ] as const;
 
 export const SOCIAL_LINKS = [
   {
-    href: '#github',
+    href: 'https://www.linkedin.com/in/fudi-mahfudin',
+    title: 'LinkedIn',
+    icon: LinkedinIcon,
+  },
+  {
+    href: 'https://github.com/fudi-mahfudin',
     title: 'GitHub',
     icon: SiGithub,
   },
   {
-    href: '#linkedin',
-    title: 'LinkedIn',
-    icon: LinkedinIcon,
+    href: 'https://instagram.com',
+    title: 'Instagram',
+    icon: SiInstagram,
+  },
+  {
+    href: 'https://youtube.com',
+    title: 'YouTube',
+    icon: SiYoutube,
   },
 ];

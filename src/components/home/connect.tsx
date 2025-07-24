@@ -1,6 +1,6 @@
-import { SOCIAL_LINKS } from "@/config/links";
-import { LinkIcon } from "lucide-react";
-import Link from "next/link";
+import { SOCIAL_LINKS } from '@/config/links';
+import { LinkIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Connect() {
   return (
@@ -20,6 +20,8 @@ export default function Connect() {
               key={href}
               href={href}
               className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-3 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Icon className="size-[18px]" />
               <h3>{title}</h3>

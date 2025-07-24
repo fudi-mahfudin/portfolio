@@ -41,6 +41,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --shadow-feature-card: var(--feature-card);
+  --background-image-nav-link-indicator: var(--nav-link-indicator);
   --background-image-email-button: var(--email-button);
 
   --animate-marquee-left: marquee-left var(--duration, 30s) linear infinite;
@@ -100,7 +101,16 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
   --feature-card: 0 -1px 3px 0 rgb(0 0 0 / 0.05);
-  --email-button: linear-gradient(180deg, var(--color-amber-600) 5%, var(--color-amber-400) 100%);
+  --nav-link-indicator: radial-gradient(
+    44.6% 825% at 50% 50%,
+    rgb(255 133 133) 0%,
+    rgb(255 72 109 / 0) 100%
+  );
+  --email-button: linear-gradient(
+    180deg,
+    var(--color-amber-600) 5%,
+    var(--color-amber-400) 100%
+  );
 }
 
 .dark {
@@ -136,7 +146,13 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
 
-  --feature-card: 0 0 0 1px rgb(255 255 255 / 0.06), 0 -1px rgb(255 255 255 / 0.1);
+  --nav-link-indicator: radial-gradient(
+    44.6% 825% at 50% 50%,
+    rgb(255 28 28) 0%,
+    rgb(255 72 109 / 0) 100%
+  );
+  --feature-card: 0 0 0 1px rgb(255 255 255 / 0.06),
+    0 -1px rgb(255 255 255 / 0.1);
 }
 
 @layer base {

@@ -21,7 +21,12 @@ export default function Footer() {
                 <Link
                   key={href}
                   href={href}
-                  className={cn(linkVariants({ variant: 'muted' }), 'capitalize')}
+                  className={cn(
+                    linkVariants({ variant: 'muted' }),
+                    'capitalize'
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {key}
                 </Link>
@@ -31,7 +36,9 @@ export default function Footer() {
         ))}
       </div>
       <div className="mt-20 flex items-center justify-between text-sm">
-        <div>&copy; {new Date().getFullYear()} {PROFILE_DATA.name}</div>
+        <div>
+          &copy; {new Date().getFullYear()} {PROFILE_DATA.name}
+        </div>
         <Link
           href="https://git.new/fudi"
           className="flex items-center justify-center overflow-hidden rounded-md border"
