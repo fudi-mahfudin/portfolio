@@ -1,4 +1,5 @@
 import Hero from '@/components/home/hero';
+import SelectedProjects from '@/components/home/selected-projects';
 import { PROFILE_DATA } from '@/data';
 import { APP_URL } from '@/lib/constants';
 import { WebSite, WithContext } from 'schema-dts';
@@ -34,6 +35,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
+      <SelectedProjects />
     </>
   );
 }

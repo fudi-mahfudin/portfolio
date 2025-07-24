@@ -33,7 +33,7 @@ export default function Header() {
       className={cn(
         'fixed inset-x-0 top-4 z-40 mx-auto flex h-[60px] max-w-5xl items-center justify-between px-8',
         'bg-background/30 shadow-xs rounded-2xl saturate-100 background-blur-[10px] transition-colors',
-        isScrolled && 'bg-black/80'
+        isScrolled && 'bg-background/80'
       )}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
