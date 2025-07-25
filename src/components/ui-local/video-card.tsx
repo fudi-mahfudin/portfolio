@@ -14,7 +14,7 @@ interface VideoCardProps {
 }
 
 function VideoCard({ project, active = false }: VideoCardProps) {
-  const { name, description } = project;
+  const { name, description, github, live } = project;
 
   return (
     <div className="shadow-feature-card group relative rounded-xl">
@@ -26,22 +26,30 @@ function VideoCard({ project, active = false }: VideoCardProps) {
         </p>
       </div>
       <div className="absolute top-6 right-7 flex items-center gap-3 transition-opacity group-hover:opacity-100 opacity-0">
-        <Link
-          className={cn(buttonVariants({ variant: 'outline' }), 'rounded-xl')}
-          href="#github"
-          title="Open repository"
-        >
-          Tech
-          <GithubIcon />
-        </Link>
-        <Link
-          className={cn(buttonVariants({ variant: 'default' }), 'rounded-xl')}
-          href="#live"
-          title="Open live"
-        >
-          Live
-          <SquareArrowOutUpRightIcon />
-        </Link>
+        {github && (
+          <Link
+            className={cn(buttonVariants({ variant: 'outline' }), 'rounded-xl')}
+            href={github}
+            title="Open repository"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tech
+            <GithubIcon />
+          </Link>
+        )}
+        {live && (
+          <Link
+            className={cn(buttonVariants({ variant: 'default' }), 'rounded-xl')}
+            href={live}
+            title="Open live"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live
+            <SquareArrowOutUpRightIcon />
+          </Link>
+        )}
       </div>
     </div>
   );

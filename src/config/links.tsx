@@ -11,6 +11,7 @@ import {
   PencilIcon,
   UserCircleIcon,
 } from 'lucide-react';
+import { PROFILE_DATA } from './profile';
 
 export const HEADER_LINKS = [
   {
@@ -35,7 +36,7 @@ export const HEADER_LINKS = [
   },
   {
     icon: <FileUserIcon className="size-3.5" />,
-    href: '/resume',
+    href: PROFILE_DATA.cv_url,
     key: 'resume',
   },
 ] as const;
@@ -47,7 +48,7 @@ export const FOOTER_LINKS = [
       { href: '/', key: 'home' },
       { href: '/blog', key: 'blog' },
       { href: '/about', key: 'about' },
-      { href: '/resume', key: 'resume' },
+      { href: PROFILE_DATA.cv_url, key: 'resume' },
     ],
   },
   {

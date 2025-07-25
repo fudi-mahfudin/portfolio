@@ -11,6 +11,7 @@ export default function Navbar() {
       <ul className="flex gap-2">
         {HEADER_LINKS.map((link) => {
           const isActive = link.href === pathname;
+          const isExternal = link.href.startsWith('http');
 
           return (
             <li
@@ -24,6 +25,8 @@ export default function Navbar() {
                   !isActive && 'text-muted-foreground hover:text-foreground',
                   isActive && 'text-foreground'
                 )}
+                target={isExternal ? '_blank' : undefined}
+                rel={isExternal ? 'noopener noreferrer' : undefined}
               >
                 {link.key}
               </Link>

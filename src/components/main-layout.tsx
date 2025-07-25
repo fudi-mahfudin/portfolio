@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Header from './layout/header';
 import Footer from './layout/footer';
+import background from '@/../public/images/gradient-background-top.png';
 
 export default function MainLayout({
   children,
@@ -21,16 +22,16 @@ export default function MainLayout({
         width={1512}
         height={550}
         className="absolute left-1/2 top-0 -z-10 -translate-x-1/2"
-        src="/images/gradient-background-top.png"
+        src={background}
         alt=""
         role="presentation"
         priority
       />
       <Image
         width={1512}
-        height={447}
+        height={550}
         className="absolute left-1/2 -bottom-6 -z-10 -translate-x-1/2 rotate-180"
-        src="/images/gradient-background-top.png"
+        src={background}
         alt=""
         role="presentation"
         priority

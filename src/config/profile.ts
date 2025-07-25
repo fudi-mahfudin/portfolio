@@ -11,6 +11,7 @@ export const PROFILE_DATA = {
   photo_url: '/images/profile-tr.webp',
   photo_src: PhotoImg,
   email: 'fudi.mahfudin@gmail.com',
+  github_url: 'https://github.com/fudi-mahfudin',
   wa_url: 'https://wa.me/6289653893888',
   cv_url:
     'https://drive.google.com/file/d/1r6o60UGqWqmixusSzOvdxU1vRBLOrJQE/view',

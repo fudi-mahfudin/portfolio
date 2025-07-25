@@ -9,38 +9,45 @@ export default function Footer() {
   return (
     <footer className="bg-background/30 shadow-xs relative mx-auto mb-6 flex w-full max-w-5xl flex-col rounded-2xl p-8 saturate-100 backdrop-blur-[10px]">
       <div className="mt-12 grid grid-cols-2 sm:grid-cols-3">
-        {FOOTER_LINKS.map((list) => (
-          <div
-            key={list.id}
-            className="mb-10 flex flex-col items-start gap-4 pr-4"
-          >
-            {list.links.map((link) => {
-              const { href, key } = link;
+        {FOOTER_LINKS.map((list) => {
+          const isExternal = list.links.some((link) =>
+            link.href.startsWith('http')
+          );
+          return (
+            <div
+              key={list.id}
+              className="mb-10 flex flex-col items-start gap-4 pr-4"
+            >
+              {list.links.map((link) => {
+                const { href, key } = link;
 
-              return (
-                <Link
-                  key={href}
-                  href={href}
-                  className={cn(
-                    linkVariants({ variant: 'muted' }),
-                    'capitalize'
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {key}
-                </Link>
-              );
-            })}
-          </div>
-        ))}
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    className={cn(
+                      linkVariants({ variant: 'muted' }),
+                      'capitalize'
+                    )}
+                    target={isExternal ? '_blank' : undefined}
+                    rel={isExternal ? 'noopener noreferrer' : undefined}
+                  >
+                    {key}
+                  </Link>
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
       <div className="mt-20 flex items-center justify-between text-sm">
         <div>
           &copy; {new Date().getFullYear()} {PROFILE_DATA.name}
         </div>
         <Link
-          href="https://git.new/fudi"
+          href={PROFILE_DATA.github_url}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center overflow-hidden rounded-md border"
         >
           <div className="bg-muted flex h-8 items-center gap-2 border-r px-2">
