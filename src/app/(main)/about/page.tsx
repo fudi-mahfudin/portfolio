@@ -1,5 +1,4 @@
 import PageTitle from '@/components/ui-local/page-title';
-import { notFound } from 'next/navigation';
 
 export default function AboutPage() {
   const title = 'About';

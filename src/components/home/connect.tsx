@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS } from '@/config/links';
+import { SOCIAL_LINKS } from '@/config';
 import { LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 

@@ -1,4 +1,4 @@
-import { formatNumber } from '@/lib/utils';
+import { PROFILE_DATA } from '@/config';
 import { ClockIcon } from 'lucide-react';
 
 export default function CodingHours() {
@@ -9,12 +9,7 @@ export default function CodingHours() {
         <h2 className="text-sm">Coding Hours</h2>
       </div>
       <div className="flex-1 flex grow items-center justify-center text-4xl font-semibold">
-        {formatNumber(
-          Math.round(
-            (new Date().getTime() - new Date('2015-01-01').getTime()) /
-              (1000 * 60 * 60 * 24)
-          ) * 3
-        )}
+        {PROFILE_DATA.coding_hours}
         &nbsp;hrs
       </div>
     </div>

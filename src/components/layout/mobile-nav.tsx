@@ -1,7 +1,7 @@
 import { MenuIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
-import { HEADER_LINKS } from "@/config/links";
+import { HEADER_LINKS } from "@/config";
 import Link from "next/link";
 
 export default function MobileNav() {

@@ -1,10 +1,17 @@
-import { FlameIcon } from "lucide-react";
+import PageTitle from '@/components/ui-local/page-title';
+import { ProjectCardList } from '@/components/ui-local/project-card';
+import { ALL_PROJECTS } from '@/config';
 
 export default function ProjectsPage() {
+  const title = 'Projects';
+  const description = 'The list of my projects. Everything was made with ❤️.';
+
   return (
-    <div className="flex flex-col items-center justify-center gap-10 h-[60vh]">
-      <FlameIcon className="size-50 text-muted-foreground" />
-      <h1 className="text-3xl font-bold text-muted-foreground">Projects</h1>
-    </div>
-  )
+    <>
+      <PageTitle title={title} description={description} />
+      <div className="grid gap-4 md:grid-cols-2">
+        <ProjectCardList projects={ALL_PROJECTS} />
+      </div>
+    </>
+  );
 }

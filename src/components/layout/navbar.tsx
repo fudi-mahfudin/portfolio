@@ -1,4 +1,4 @@
-import { HEADER_LINKS } from '@/config/links';
+import { HEADER_LINKS } from '@/config';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

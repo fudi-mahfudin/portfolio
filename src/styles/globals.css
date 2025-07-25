@@ -43,6 +43,7 @@
   --shadow-feature-card: var(--feature-card);
   --background-image-nav-link-indicator: var(--nav-link-indicator);
   --background-image-email-button: var(--email-button);
+  --color-special: var(--special);
 
   --animate-marquee-left: marquee-left var(--duration, 30s) linear infinite;
   --animate-marquee-up: marquee-up var(--duration, 30s) linear infinite;
@@ -111,6 +112,7 @@
     var(--color-amber-600) 5%,
     var(--color-amber-400) 100%
   );
+  --special: var(--color-amber-500);
 }
 
 .dark {

@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { PROFILE_DATA } from '@/data';
+import { PROFILE_DATA } from '@/config';
 import { APP_URL } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 

@@ -8,7 +8,6 @@ import {
   FlameIcon,
   HeartHandshakeIcon,
   LinkedinIcon,
-  MonitorIcon,
   PencilIcon,
   UserCircleIcon,
 } from 'lucide-react';

@@ -1,15 +1,14 @@
 import { APP_URL } from '@/lib/constants';
 import PhotoImg from '@/../public/images/profile-tr.webp';
 import LogoImg from '@/../public/images/logo-fudi.png';
-import LinkedinImg from '@/../public/images/logo/icon-linkedin.svg';
-import GithubImg from '@/../public/images/logo/icon-github.svg';
+import { formatNumber } from '@/lib/utils';
 
 export const PROFILE_DATA = {
   name: 'Fudi Mahfudin',
   name_first: 'Fudi',
   name_last: 'Mahfudin',
   job: 'Full Stack Developer',
-  photo: '/images/profile-tr.webp',
+  photo_url: '/images/profile-tr.webp',
   photo_src: PhotoImg,
   email: 'fudi.mahfudin@gmail.com',
   wa_url: 'https://wa.me/6289653893888',
@@ -25,17 +24,14 @@ export const PROFILE_DATA = {
   meta_keywords: ['Full Stack Developer', 'Next.js', 'React Native', 'Laravel'],
   og_image: `${APP_URL}/images/open-graph-fudi.png`,
   logo_src: LogoImg,
+  coding_started_date: '2017-01-01',
+  get coding_hours() {
+    return formatNumber(
+      Math.round(
+        (new Date().getTime() - new Date(this.coding_started_date).getTime()) /
+          (1000 * 60 * 60 * 24)
+      ) * 3
+    );
+  },
 };
 
-export const SOCIAL_DATA = [
-  {
-    icon: LinkedinImg,
-    link: 'https://www.linkedin.com/in/fudi-mahfudin/',
-    username: 'Fudi Mahfudin',
-  },
-  {
-    icon: GithubImg,
-    link: 'https://github.com/fudi-mahfudin',
-    username: 'Fudi Mahfudin',
-  },
-];

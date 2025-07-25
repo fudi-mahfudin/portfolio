@@ -1,9 +1,9 @@
-import { FOOTER_LINKS } from '@/config/links';
+import { FOOTER_LINKS } from '@/config';
 import { StarIcon } from 'lucide-react';
 import Link from 'next/link';
 import { linkVariants } from '../ui-local/link';
 import { cn } from '@/lib/utils';
-import { PROFILE_DATA } from '@/data';
+import { PROFILE_DATA } from '@/config';
 
 export default function Footer() {
   return (

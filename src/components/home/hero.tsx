@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import BlurImage from '../ui-local/blur-image';
-import { PROFILE_DATA } from '@/data';
+import { PROFILE_DATA } from '@/config';
 
 const TEXTS = [
   {
@@ -62,7 +62,7 @@ export default function Hero() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ ease: 'easeOut' }}
             >
-              I'm Fudi, a Full Stack Developer
+              I&apos;m Fudi, a Full Stack Developer
             </motion.div>
             <motion.div
               initial={{ x: 30, opacity: 0 }}

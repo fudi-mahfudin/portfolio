@@ -1,10 +1,7 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import { motion, useInView } from 'motion/react';
-import Link from 'next/link';
 import { useRef } from 'react';
-import { buttonVariants } from '../ui/button';
 import StacksCard from './stacks-card';
 import LocationCard from './location-card';
 import Connect from './connect';
@@ -35,7 +32,8 @@ export default function AboutMe() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        About Me
+        Know more&nbsp;
+        <span className="text-special">About me</span>
       </motion.h2>
       <motion.div
         className="mt-12 grid gap-4 md:grid-cols-2"
@@ -55,14 +53,14 @@ export default function AboutMe() {
           </div>
         </div>
       </motion.div>
-      <div className="my-8 flex items-center justify-center">
+      {/* <div className="my-8 flex items-center justify-center">
         <Link
           href="/about"
           className={cn(buttonVariants({ variant: 'outline' }), 'rounded-xl')}
         >
           Know more about me
         </Link>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

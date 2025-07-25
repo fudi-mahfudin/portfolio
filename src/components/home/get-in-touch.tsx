@@ -4,7 +4,7 @@ import { motion, useAnimate, useInView } from 'motion/react';
 import { useEffect, useRef } from 'react';
 import BlurImage from '../ui-local/blur-image';
 import me from '@/../public/images/me-coding.jpg';
-import { PROFILE_DATA } from '@/data';
+import { PROFILE_DATA } from '@/config';
 
 const variants = {
   initial: { y: 40, opacity: 0 },
@@ -106,7 +106,7 @@ export default function GetInTouch() {
                 width="16.8"
                 height="18.2"
                 viewBox="0 0 12 13"
-                className="fill-amber-500"
+                className="fill-special"
                 stroke="white"
                 strokeWidth="1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export default function GetInTouch() {
                   d="M12 5.50676L0 0L2.83818 13L6.30623 7.86537L12 5.50676V5.50676Z"
                 />
               </svg>
-              <span className="relative left-4 rounded-3xl bg-amber-500 px-2 py-0.5 text-xs text-white">
+              <span className="relative left-4 rounded-3xl bg-special px-2 py-0.5 text-xs text-white">
                 {PROFILE_DATA.name_first}
               </span>
             </div>
@@ -125,7 +125,8 @@ export default function GetInTouch() {
 
           <div className="flex flex-col justify-center px-4">
             <p className="bg-linear-to-r mb-2 from-black to-black/70 bg-clip-text text-3xl font-semibold text-transparent dark:from-zinc-100 dark:to-zinc-400">
-              Any question about Next.js?
+              Any question about&nbsp;
+              <span className="text-special">Next.js</span>?
             </p>
             <p className="text-zinc-800 dark:text-zinc-300">
               Feel free to react out to me!

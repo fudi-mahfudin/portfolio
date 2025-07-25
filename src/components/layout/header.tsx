@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { PROFILE_DATA } from '@/data';
+import { PROFILE_DATA } from '@/config';
 import Navbar from './navbar';
 import MobileNav from './mobile-nav';
 
@@ -32,7 +32,7 @@ export default function Header() {
     <motion.header
       className={cn(
         'fixed inset-x-0 top-4 z-40 mx-auto flex h-[60px] max-w-5xl items-center justify-between px-8',
-        'bg-background/30 shadow-xs rounded-2xl saturate-100 background-blur-[10px] transition-colors',
+        'bg-background/30 shadow-xs rounded-2xl saturate-100 background-blur-[10px] transition-colors duration-1000',
         isScrolled && 'bg-background/80'
       )}
       initial={{ y: -100 }}
