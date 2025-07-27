@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import { Maximize2Icon } from 'lucide-react';
 import { useRef, useEffect } from 'react';
 import { Button } from '../ui/button';
+import { AspectRatio } from '../ui/aspect-ratio';
 
 interface VideoProps {
   active?: boolean;
@@ -29,14 +30,19 @@ export default function Video({
 
   return (
     <div className="rounded-xl group/video relative">
-      <video
-        src={videoSrc}
-        ref={videoRef}
-        loop={active}
-        controls={false}
-        muted
-        className={cn('h-full w-full rounded-xl', active ? '' : 'grayscale')}
-      />
+      <AspectRatio ratio={16 / 9}>
+        <video
+          src={videoSrc}
+          ref={videoRef}
+          loop={active}
+          controls={false}
+          muted
+          className={cn(
+            'h-full w-full rounded-xl object-cover',
+            active ? '' : 'grayscale'
+          )}
+        />
+      </AspectRatio>
       {overlay && (
         // <div className="absolute bottom-0 left-0 size-full bg-radial-[at_0%_100%] from-black/50 to-50% to-transparent rounded-xl group-hover/video:opacity-0 opacity-100 transition-opacity duration-[3000ms]" />
         <div className="absolute bottom-0 left-0 size-full bg-gradient-to-t from-black/50 to-50% to-transparent rounded-xl group-hover/video:opacity-0 opacity-100 transition-opacity duration-[3000ms]" />

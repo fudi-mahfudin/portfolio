@@ -13,11 +13,15 @@ interface VideoCardProps {
   active?: boolean;
 }
 
-function VideoCard({ project, active = false }: VideoCardProps) {
+function VideoCard({
+  project,
+  active = false,
+  ...props
+}: VideoCardProps & React.HTMLAttributes<HTMLDivElement>) {
   const { name, description, github, live } = project;
 
   return (
-    <div className="shadow-feature-card group relative rounded-xl">
+    <div className="shadow-feature-card group relative rounded-xl" {...props}>
       <Video active={active} videoSrc={project.video} overlay />
       <div className="absolute bottom-6 left-7 flex flex-col transition-[left] ease-out group-hover:left-[30px] mr-14">
         <h3 className="text-2xl font-semibold text-white">{name}</h3>
@@ -69,13 +73,13 @@ function VideoCardList({ projects }: { projects: Project[] }) {
   return (
     <>
       {projects.map((project, index) => (
-        <div
+        <VideoCard
+          project={project}
+          active={hoveredIndex === index}
           key={project.name}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
-        >
-          <VideoCard project={project} active={hoveredIndex === index} />
-        </div>
+        />
       ))}
     </>
   );

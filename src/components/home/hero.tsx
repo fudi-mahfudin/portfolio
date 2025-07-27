@@ -119,6 +119,7 @@ export default function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: 'easeOut' }}
             className="text-muted-foreground text-sm"
+            suppressHydrationWarning={true}
           >
             Jakarta •&nbsp;
             {new Date().toLocaleTimeString('en-US', {
