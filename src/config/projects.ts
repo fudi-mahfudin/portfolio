@@ -11,6 +11,16 @@ export interface Project {
 
 export const ALL_PROJECTS: Project[] = [
   {
+    name: 'Building Scalable Solutions with Modern Technologies',
+    description: 'Building and deploying scalable, user-focused applications for both web and mobile from a single codebase. Showcases expertise in transforming concepts into high-performance products, with a focus on seamless AI integration, secure user authentication, and robust data management.',
+    video: 'https://res.cloudinary.com/djesqekdk/video/upload/v1754452946/ai-recorder-mobile_vaye5n.mp4',
+    live: 'https://ai-recorder-fudi.expo.app/',
+    github: 'https://github.com/fudi-mahfudin/ai-recorder-mobile',
+    stack: ['React Native', 'Expo', 'Nativewind', 'Drizzle ORM', 'TypeScript', 'AI integration', 'Clerk Auth'],
+    featured: true,
+    autoplay: true,
+  },
+  {
     name: 'Scroll-driven animation',
     description: 'An interactive web experience featuring scroll-driven animations built with React.js, styled using Tailwind CSS, and powered by GSAP for smooth, performant transitions.',
     video: 'https://res.cloudinary.com/djesqekdk/video/upload/v1752469527/gta-motion_x6jnx6.mp4',
@@ -18,7 +28,6 @@ export const ALL_PROJECTS: Project[] = [
     github: 'https://github.com/fudi-mahfudin/gta_landing_motion',
     stack: ['React.js', 'GSAP', 'Tailwind CSS'],
     featured: true,
-    autoplay: true,
   },
   {
     name: 'Real-time Chat Application',
@@ -36,7 +45,6 @@ export const ALL_PROJECTS: Project[] = [
     live: 'https://fudi-petsoft.vercel.app',
     github: 'https://github.com/fudi-mahfudin/petsoft',
     stack: ['Next.js', 'Stripe', 'Tailwind CSS', 'Prisma', 'NextAuth.js'],
-    featured: true,
   },
   {
     name: 'Educational Management System',
@@ -45,7 +53,6 @@ export const ALL_PROJECTS: Project[] = [
     live: 'https://emis.kemenag.go.id',
     github: null,
     stack: ['React Native', 'Expo', 'Redux', 'React Native Paper'],
-    featured: false,
   },
   {
     name: 'EMIS',

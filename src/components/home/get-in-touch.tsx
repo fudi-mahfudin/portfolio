@@ -34,20 +34,20 @@ export default function GetInTouch() {
           { at: '+0.5', duration: 0.5, ease: 'easeInOut' },
         ],
         ['#react-js', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
-        ['#typescript', { opacity: 1 }, { duration: 0.3 }],
+        ['#next-js', { opacity: 1 }, { duration: 0.3 }],
         [
           '#pointer',
           { left: 88, top: 198 },
           { at: '+0.5', duration: 0.5, ease: 'easeInOut' },
         ],
-        ['#typescript', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
-        ['#next-js', { opacity: 1 }, { duration: 0.3 }],
+        ['#next-js', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
+        ['#react-native', { opacity: 1 }, { duration: 0.3 }],
         [
           '#pointer',
           { left: 200, top: 60 },
           { at: '+0.5', duration: 0.5, ease: 'easeInOut' },
         ],
-        ['#next-js', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
+        ['#react-native', { opacity: 0.4 }, { at: '-0.3', duration: 0.1 }],
       ],
       {
         repeat: Number.POSITIVE_INFINITY,
@@ -77,10 +77,10 @@ export default function GetInTouch() {
               alt="Me sit in front of my desk and coding"
             />
             <div
-              id="next-js"
+              id="react-native"
               className="bg-linear-to-b absolute bottom-12 left-14 rounded-3xl border from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900"
             >
-              Next.js
+              React Native
             </div>
             <div
               id="react-js"
@@ -89,10 +89,10 @@ export default function GetInTouch() {
               React.js
             </div>
             <div
-              id="typescript"
+              id="next-js"
               className="bg-linear-to-b absolute bottom-20 right-1 rounded-3xl border from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900"
             >
-              TypeScript
+              Next.js
             </div>
             <div
               id="javascript"
