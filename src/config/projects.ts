@@ -21,12 +21,12 @@ export const ALL_PROJECTS: Project[] = [
     autoplay: true,
   },
   {
-    name: 'Scroll-driven animation',
-    description: 'An interactive web experience featuring scroll-driven animations built with React.js, styled using Tailwind CSS, and powered by GSAP for smooth, performant transitions.',
-    video: 'https://res.cloudinary.com/djesqekdk/video/upload/v1752469527/gta-motion_x6jnx6.mp4',
-    live: 'https://fudi-landing-motion.vercel.app/',
-    github: 'https://github.com/fudi-mahfudin/gta_landing_motion',
-    stack: ['React.js', 'GSAP', 'Tailwind CSS'],
+    name: 'Effortless Multi-File Video Upload',
+    description: 'Tackled the complexities of uploading multiple large video files simultaneously. Our solution provides a seamless drag-and-drop experience that allows users to upload several videos at once. The system leverages chunking logic to ensure the reliability of each individual file upload and offers real-time progress updates for every video. This approach eliminates the frustration of managing multiple uploads, while automated server-side processing handles the encoding for each file efficiently.',
+    video: 'https://res.cloudinary.com/djesqekdk/video/upload/v1754571367/multiple-file-uploader_oaokyk.mp4',
+    live: null,
+    github: 'https://github.com/fudi-mahfudin/multiple-file-uploading',
+    stack: ['Laravel', 'Vue.js', 'Inertia', 'Websocket', 'Chunk upload'],
     featured: true,
   },
   {
@@ -37,6 +37,14 @@ export const ALL_PROJECTS: Project[] = [
     github: 'https://github.com/fudi-mahfudin/chat-websocket',
     stack: ['Express', 'Socket.io', 'Boostrap'],
     featured: true,
+  },
+  {
+    name: 'Scroll-driven animation',
+    description: 'An interactive web experience featuring scroll-driven animations built with React.js, styled using Tailwind CSS, and powered by GSAP for smooth, performant transitions.',
+    video: 'https://res.cloudinary.com/djesqekdk/video/upload/v1752469527/gta-motion_x6jnx6.mp4',
+    live: 'https://fudi-landing-motion.vercel.app/',
+    github: 'https://github.com/fudi-mahfudin/gta_landing_motion',
+    stack: ['React.js', 'GSAP', 'Tailwind CSS'],
   },
   {
     name: 'Pet Daycare Management',

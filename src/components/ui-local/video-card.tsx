@@ -23,12 +23,12 @@ function VideoCard({
   return (
     <div className="shadow-feature-card group relative rounded-xl" {...props}>
       <Video active={active} videoSrc={project.video} overlay />
-      <div className="absolute bottom-6 left-7 flex flex-col transition-[left] ease-out group-hover:left-[30px] mr-14">
+      <Link href='/projects' className="absolute bottom-6 left-7 flex flex-col transition-[left] ease-out group-hover:left-[30px] mr-14">
         <h3 className="text-2xl font-semibold text-white">{name}</h3>
         <p className="dark:text-muted-foreground mt-2 text-zinc-100 line-clamp-1">
           {description}
         </p>
-      </div>
+      </Link>
       <div className="absolute top-6 right-7 flex items-center gap-3 transition-opacity group-hover:opacity-100 opacity-0">
         {github && (
           <Link
